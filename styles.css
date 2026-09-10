@@ -175,3 +175,46 @@ a{text-decoration:none;color:inherit}
   .service-number{margin-bottom:38px}
   .footer-inner{flex-direction:column;align-items:flex-start}
 }
+
+.application-prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 32px;
+}
+
+.price-item {
+    padding: 22px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.price-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.price {
+    display: block;
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.price-note {
+    font-size: 13px;
+    opacity: 0.75;
+}
+
+.application-note {
+    margin-top: 28px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .application-prices {
+        grid-template-columns: 1fr;
+    }
+}
